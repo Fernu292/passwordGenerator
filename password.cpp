@@ -13,7 +13,6 @@ static const char alphanum[] =
 
 int size = sizeof(alphanum) - 1;
 
-
 int main()
 {
 	int length;
