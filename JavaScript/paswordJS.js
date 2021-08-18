@@ -21,3 +21,4 @@ console.log(`Your password is: ${password}`)
 
 
 
+console.log('Thanks for use the program')
