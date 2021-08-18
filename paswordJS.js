@@ -1,16 +1,6 @@
-//Generate a password with JavaScript
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-  });
 
+    console.log('Digite el tamaño de su contraseña: ');
+    const length = readline();
 
-const alphanum = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz"+"0123456789"+"!@#$%&*";
-const size = alphanum.length;
+    console.log(length);
 
-console.log("Select the lenght of your password: ");
-let length;
-
-
-console.log(length);
-    
