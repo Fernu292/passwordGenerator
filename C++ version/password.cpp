@@ -1,29 +1,30 @@
 #include <iostream>
 #include <ctime>
+#include<conio.h>
 
 
 using namespace std;
 
-static const char alphanum[] =
-"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-"abcdefghijklmnopqrstuvwxyz"
-"0123456789"
-"!@#$%^&*";
+int main(){
 
+	//Create the template for the password
+	string cha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!@#$%^&*";
 
-int size = sizeof(alphanum) - 1;
+	//Get the size for the range
+	int size = cha.size();
 
-int main()
-{
+	//Declare the length of password and string of password
 	int length;
+	string password;
 
-    cout<<"Select your length password: ";
-    cin>>length;
-	
-	srand(time(0));
-	for (int i = 0; i < length; i++)
-	{
-		cout << alphanum[rand() % ::size];
+
+	cout<<"Digit the length of your Password: ";cin>>length;
+
+	for(int i=0;i<length;i++){
+		password+=cha[rand()%size];
 	}
+
+	cout<<"Your password is: "<<password;
+	getch();
 	return 0;
 }
